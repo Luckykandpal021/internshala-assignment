@@ -28,13 +28,13 @@ android {
             )
         }
     }
-    ndkVersion= "27.0.11902837"
-
-    externalNativeBuild {
-        ndkBuild {
-            path = file("src/main/jni/Android.mk")
-        }
-    }
+//    ndkVersion= "27.0.11902837"
+//
+//    externalNativeBuild {
+//        ndkBuild {
+//            path = file("src/main/jni/Android.mk")
+//        }
+//    }
         compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -47,11 +47,11 @@ android {
 
 
 dependencies {
-    implementation("androidx.credentials:credentials:1.2.2")
-    implementation("androidx.credentials:credentials-play-services-auth:1.2.2")
-    implementation ("com.google.android.libraries.identity.googleid:googleid:1.1.0")
-    implementation ("androidx.security:security-crypto:1.1.0-alpha03")
-    implementation ("com.google.code.gson:gson:2.11.0")
+    implementation(libs.androidx.credentials)
+    implementation(libs.androidx.credentials.play.services.auth)
+    implementation (libs.googleid)
+    implementation (libs.androidx.security.crypto)
+    implementation (libs.gson)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
