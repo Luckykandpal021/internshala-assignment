@@ -20,7 +20,7 @@ fun setSecretKeyPrefs(context: Context) {
     )
 
     with(sharedPreferences.edit()) {
-        putString("secret_google_web_key", "696985627226-g5qtl2ulg7bqhngvoti5htg4aos54u94.apps.googleusercontent.com")
+        putString("secret_google_web_key", "<REPLACE WITH YOUR API KEY>")
         apply()
     }
 
